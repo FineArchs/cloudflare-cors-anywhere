@@ -158,7 +158,7 @@ export default {
             "Source:",
             repoUrl,
             "",
-            "Original:"
+            "Original:",
             originalRepoUrl,
             "",
             "Usage:",
@@ -177,7 +177,7 @@ export default {
             "",
             customHeaders !== null ? [
               "",
-              "x-cors-headers: " + JSON.stringify(customHeaders)
+              "x-cors-headers: " + JSON.stringify(customHeaders),
             ] : [],
           ].flat().join("\n"),
           {
