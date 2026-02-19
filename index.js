@@ -35,7 +35,7 @@ function isListedInWhitelist(uri, listing) {
 }
 
 // Event listener for incoming fetch requests
-addEventListener("fetch", async event => {
+async function fetcher(event) {
     event.respondWith((async function() {
         const isPreflightRequest = (event.request.method === "OPTIONS");
         
@@ -165,4 +165,6 @@ addEventListener("fetch", async event => {
             );
         }
     })());
-});
+}
+
+export default { fetch: fetcher };
