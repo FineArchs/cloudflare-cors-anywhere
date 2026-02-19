@@ -2,5 +2,5 @@ name = "cloudflare-cors-anywhere"
 main = "index.js"
 compatibility_date = "2023-04-17"
 [observability.logs]
-enabled = false
+enabled = true
 invocation_logs = true
