@@ -43,7 +43,8 @@ addEventListener("fetch", async event => {
 
         // Function to modify headers to enable CORS
         function setupCORSHeaders(headers) {
-            headers.set("Access-Control-Allow-Origin", event.request.headers.get("Origin"));
+            // headers.set("Access-Control-Allow-Origin", event.request.headers.get("Origin"));
+            headers.set("Access-Control-Allow-Origin", "*");
             if (isPreflightRequest) {
                 headers.set("Access-Control-Allow-Methods", event.request.headers.get("access-control-request-method"));
                 const requestedHeaders = event.request.headers.get("access-control-request-headers");
