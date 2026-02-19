@@ -155,7 +155,7 @@ export default {
           [
             "CLOUDFLARE-CORS-ANYWHERE",
             "",
-            "Source:"
+            "Source:",
             repoUrl,
             "",
             "Original:"
